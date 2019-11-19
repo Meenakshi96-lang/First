@@ -1,0 +1,39 @@
+<div class="col-md-6">
+    <h2 class="text-center">Add Product</h2>
+  <form method="post">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="name" [(ngModel)]="user.name" placeholder="Name" name="name" class="form-control" id="name">
+    </div>
+    <div class="form-group">
+        <label for="code">Code:</label>
+        <input type="code" [(ngModel)]="user.code" placeholder="code" name="code" class="form-control" id="code">
+      </div>
+      <div class="form-group">
+        <label for="category">Category:</label>
+        <input type="category" [(ngModel)]="user.category" placeholder="category" name="category" class="form-control" id="category">
+      </div>
+      <div class="form-group">
+        <label for="unit">Unit:</label>
+        <input type="unit" [(ngModel)]="user.unit" placeholder="unit" name="unit" class="form-control" id="unit">
+      </div>
+      <div class="form-group">
+        <label for="purchaseRate">PurchaseRate:</label>
+        <input type="purchaseRate" [(ngModel)]="user.purchaseRate" placeholder="purchaseRate" name="purchaseRate" class="form-control" id="purchaseRate">
+      </div>
+      <div class="form-group">
+        <label for="salesRate">SalesRate:</label>
+        <input type="salesRate" [(ngModel)]="user.salesRate" placeholder="salesRate" name="salesRate" class="form-control" id="salesRate">
+      </div>
+  
+    <div class="form-group">
+      <label for="productID">Product Id</label>
+      <input [(ngModel)]="user.productID" placeholder="Product Id" name="productID" class="form-control" id="productID">
+    </div>
+  
+    <!-- <input type="submit" name="submit" class="btn btn-success" (click)="createProduct()"> -->
+    
+    <button class="btn btn-success" (click)="createProduct()">Create</button>
+   
+  </form>
+  </div>

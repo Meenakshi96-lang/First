@@ -1,0 +1,30 @@
+<div class="row content">
+    <div class="col-sm-12">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Code</th>
+            <th scope="col">Category</th>
+            <th scope="col">Unit</th>
+            <th scope="col">Purchase Rate</th>
+            <th scope="col">Sales Rate</th>
+            <th scope="col">Product ID</th>
+            <th scope="col">Delete Product</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of products">
+            <td>{{ product.name }}</td>
+            <td>{{ product.code }}</td>
+            <td>{{ product.category }}</td>
+            <td>{{ product.unit}}</td>
+            <td>{{ product.purchaseRate }}</td>
+            <td>{{ product.salesRate }}</td>
+            <td>{{ product.productID }}</td>
+            <td><button class="btn btn-danger" (click)="deleteProduct(product)"> Delete Employee</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
